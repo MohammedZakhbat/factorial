@@ -16,15 +16,15 @@
             </p>
         </div>
 
-        <div>
-            <label for="">Número</label>
-            <input type="text">
+        <div class="space-y-2">
+            <label class="text-sm font-medium text-slate-600">Número</label>
+            <input type="number" id="numero" class="w-full p-4 rounded-2xl border border-slate-200 bg-white focus:outline-none focus:ring-4 focus:ring-cyan-200 focus:border-cyan-400 transition text-lg ">
         </div>
-        <button>
+        <button onclick="calcularFactorial()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold text-lg shadow-lg hover:scale-[1.02] active:scale-95 transition  ">
             Calculate
         </button>
-        <div></div>
-        <p>
+        <div id="resultado" class="text-center text-lg font-semibold text-slate-700 bg-slate-50 border border-slate-200 p-4 min-h-[60px] flex items-center justify-center"></div>
+        <p class="text-center text-xs text-slate-400">
            Calculadora de factorial rápida y sencilla 
         </p>
     </div>
